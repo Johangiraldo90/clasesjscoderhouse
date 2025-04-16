@@ -1,1 +1,2 @@
-console.log('Hola')
+console.log("Semana 1 grabación.")
+
