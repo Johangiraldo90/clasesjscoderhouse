@@ -20,3 +20,31 @@ for (let i = 0; i<usuarios.length; i++){
         console.log("Mayores de edad " + usuarios[i].nombre)
     }
 }
+
+
+// condicionales anidadas 
+
+javascript
+//Copiar código
+//let edad = 20;
+
+if (edad >= 18) {
+    console.log("Eres mayor de edad");
+} else {
+    console.log("Eres menor de edad");
+}
+
+// javascript
+//Copiar código
+let edad = null;
+let nombre = "Carlos";
+
+if (edad !== null && edad !== undefined) {
+    console.log(`Tienes ${edad} años`);
+} else {
+    if (nombre) {
+    console.log(`Bienvenido, ${nombre}`);
+} else {
+    console.log("Información incompleta");
+}
+}
