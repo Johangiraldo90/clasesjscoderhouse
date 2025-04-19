@@ -73,5 +73,63 @@ console.log("Clase grabada semana 3")
     
 // console.log(caluculadoradel10(2))
 
-const multiplicacion = (numeroA, NumeroB)=>numeroA*NumeroB
-console.log(multiplicacion(2, 4))
+// const multiplicacion = (numeroA, NumeroB)=>numeroA*NumeroB
+// console.log(multiplicacion(2, 4))
+
+// calculadoras 
+function suma(){
+    let numeroA = parseInt(prompt("Ingrese numero"))
+    let numeroB = parseInt(prompt("Ingrese numero"))
+    let resultado = numeroA + numeroB
+    alert(`Numero A ${numeroA} sumado el numero B ${numeroB} es igual ${resultado}`)
+}
+
+function resta(){
+    let numeroA = parseInt(prompt("Ingrese numero"))
+    let numeroB = parseInt(prompt("Ingrese numero"))
+    let resultado = numeroA - numeroB
+    alert(`Numero A ${numeroA} restado el numero B ${numeroB} es igual ${resultado}`)
+}
+
+function multiplicacion(){
+    let numeroA = parseInt(prompt("Ingrese numero"))
+    let numeroB = parseInt(prompt("Ingrese numero"))
+    let resultado = numeroA * numeroB
+    alert(`Numero A ${numeroA} multiplicado el numero B ${numeroB} es igual ${resultado}`)
+}
+
+
+function dividir(){
+    let numeroA = parseInt(prompt("Ingrese numero"))
+    let numeroB = parseInt(prompt("Ingrese numero"))
+    let resultado = numeroA / numeroB
+    alert(`Numero A ${numeroA} dividido el numero B ${numeroB} es igual ${resultado}`)
+}
+
+let menu = parseInt(prompt("Eliga una opcion: \n 1 sumar \n 2 resta \n 3 multiplicacion \n 4 para dividir \n  5 menu principal \n 6 para salir "))
+
+while (menu !=6){
+    switch(menu){
+        case 1:
+            suma()
+            break
+        case 2:
+            resta()
+            break
+        case 3:
+            multiplicacion()
+            break
+        case 4:
+            dividir()
+        case 5:
+            menu = parseInt(prompt("Eliga una opcion: \n 1 sumar \n 2 resta \n 3 multiplicacion \n 4 para dividir \n  5 menu principal \n 6 para salir "))
+            break
+        case 6:
+            console.log("Saliendo")
+            break
+        default:
+            alert("opcion incorrecta")
+    }
+}
+
+menu = parseInt(prompt("Eliga una opcion: \n 1 sumar \n 2 resta \n 3 multiplicacion \n 4 para dividir \n  5 menu principal \n 6 para salir "))
